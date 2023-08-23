@@ -1,3 +1,12 @@
+Dockerfile copy
+Dockerfile-tink
+build/*
+example-config copy.json
+get-pip.py
+package-lock.json
+regsite.db
+tox copy.ini
+tox.ini-org
 # Compiled source #
 ###################
 *.com

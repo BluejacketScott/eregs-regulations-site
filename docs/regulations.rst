@@ -5,64 +5,64 @@ Subpackages
 -----------
 
 .. toctree::
+   :maxdepth: 4
 
-    regulations.generator
-    regulations.management
-    regulations.migrations
-    regulations.settings
-    regulations.templatetags
-    regulations.tests
-    regulations.uitests
-    regulations.views
+   regulations.generator
+   regulations.management
+   regulations.migrations
+   regulations.settings
+   regulations.templatetags
+   regulations.tests
+   regulations.uitests
+   regulations.views
 
 Submodules
 ----------
 
-regulations\.all\_urls module
------------------------------
+regulations.all\_urls module
+----------------------------
 
 .. automodule:: regulations.all_urls
-    :members:
-    :undoc-members:
-    :show-inheritance:
+   :members:
+   :undoc-members:
+   :show-inheritance:
 
-regulations\.apps module
-------------------------
+regulations.apps module
+-----------------------
 
 .. automodule:: regulations.apps
-    :members:
-    :undoc-members:
-    :show-inheritance:
+   :members:
+   :undoc-members:
+   :show-inheritance:
 
-regulations\.context module
----------------------------
+regulations.context module
+--------------------------
 
 .. automodule:: regulations.context
-    :members:
-    :undoc-members:
-    :show-inheritance:
+   :members:
+   :undoc-members:
+   :show-inheritance:
 
-regulations\.url\_caches module
--------------------------------
+regulations.url\_caches module
+------------------------------
 
 .. automodule:: regulations.url_caches
-    :members:
-    :undoc-members:
-    :show-inheritance:
+   :members:
+   :undoc-members:
+   :show-inheritance:
 
-regulations\.urls module
-------------------------
+regulations.urls module
+-----------------------
 
 .. automodule:: regulations.urls
-    :members:
-    :undoc-members:
-    :show-inheritance:
-
+   :members:
+   :undoc-members:
+   :show-inheritance:
 
 Module contents
 ---------------
 
 .. automodule:: regulations
-    :members:
-    :undoc-members:
-    :show-inheritance:
+   :members:
+   :undoc-members:
+   :show-inheritance:

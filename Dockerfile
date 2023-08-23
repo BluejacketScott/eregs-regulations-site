@@ -1,5 +1,6 @@
-FROM node:6
-ARG PYTHON3=3
+FROM node:8-buster-slim
+# poss. 8.6
+ARG PYTHON3
 ENV PIP_PACKAGE=python${PYTHON3}-pip \
     PIP_CMD=pip$PYTHON3 \
     PYTHON_CMD=python$PYTHON3
