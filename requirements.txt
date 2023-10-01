@@ -17,3 +17,4 @@ six==1.16.0
 tomli==2.0.1
 tox==4.11.3
 virtualenv==20.24.5
+setuptools==20.5
