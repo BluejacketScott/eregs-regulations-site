@@ -16,6 +16,8 @@ tox.ini-org
 *.o
 *.so
 
+venv/*
+
 # Packages #
 ############
 # it's better to unpack these files and commit the raw source
