@@ -20,6 +20,57 @@ This library requires
 * setuptools v20.5 or later
 * Node 6 or later
 
+### To get Python3.6:
+
+Install tools and headers needed to build CPythons (exotic Pythons like PyPy or Jython may have other dependencies). Git is used by pyenv, plus it also enables builds/installs of source branches, so you could install whatever 3.8 is right now, i.e. the master branch of CPython fresh off GitHub:
+
+```bash
+sudo apt-get install -y git
+sudo apt-get install -y build-essential libbz2-dev libssl-dev libreadline-dev \
+                        libffi-dev libsqlite3-dev tk-dev
+
+# optional scientific package headers (for Numpy, Matplotlib, SciPy, etc.)
+sudo apt-get install -y libpng-dev libfreetype6-dev    
+```
+Run the installer script (installs pyenv and some very useful pyenv plugins by the original author; see here for more)
+
+```bash
+curl -L https://github.com/pyenv/pyenv-installer/raw/master/bin/pyenv-installer | bash
+```
+
+Add init lines to your ~/.profile or ~/.bashrc (it mentions it at the end of the install script):
+```bash
+export PATH="$HOME/.pyenv/bin:$PATH"
+eval "$(pyenv init -)"
+eval "$(pyenv virtualenv-init -)"
+```
+
+Restart your shell (close & open or exec $SHELL) or reload the profile script. (with e.g. source ~/.bashrc)
+
+Setting up an environment
+Do not touch the system Python (generally a bad idea; OS-level services might be relying on some specific library versions, etc.) make your own environment, it's easy! Even better, no sudo, for it or pip installs!
+
+Install your preferred Python version (this will download the source and build it for your user, no input required)
+```bash
+pyenv install 3.6.0
+```
+
+Make it a virtualenv so you can make others later if you want
+
+```bash
+pyenv virtualenv 3.6.0 general
+```
+
+Make it globally active (for your user)
+
+```bash
+pyenv global general
+
+```
+Do what you want to with the Python/pip, etc. It's yours.
+
+
+
 ## API Docs
 
 [regulations-site on Read The Docs](https://regulations-site.readthedocs.org/en/latest/)
